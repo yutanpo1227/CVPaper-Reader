@@ -46,10 +46,26 @@ supabaseを起動します。
 ```bash
 supabase start
 ```
-シードデータとしてCVPR2023~2025の論文データが入っています。
+初回実行後、以下の情報が `supabase/.temp` 配下に出力されます（`supabase status` でも確認可能）。
+
+| 変数名                         | 例                               |
+|--------------------------------|----------------------------------|
+| `SUPABASE_URL`                | `http://127.0.0.1:54321`         |
+| `SUPABASE_ANON_KEY`           | `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...` |
+| `SUPABASE_SERVICE_ROLE_KEY`   | `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...` |
+| `SUPABASE_DB_URL`             | `postgresql://postgres:postgres@localhost:54322/postgres` |`
+
+またシードデータとしてCVPR2023~2025の論文データが入っています。
 
 3. フロントエンドの起動
+`.env.local`を作成します。
+```bash
+cp nextjs-frontend/.env.local.example nextjs-frontend/.env.local
+```
 
+`NEXT_PUBLIC_SUPABASE_URL` / `NEXT_PUBLIC_SUPABASE_ANON_KEY` を先ほどの Supabase ローカルの値で更新します。
+
+ローカルサーバーを起動します。
 ```bash
 cd nextjs-frontend
 npm install
