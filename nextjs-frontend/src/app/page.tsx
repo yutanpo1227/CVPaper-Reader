@@ -77,7 +77,9 @@ export default function Home() {
             {filteredArticles.length === 1 ? " result" : " results"}
           </span>
           <span className="text-xs uppercase tracking-wide text-slate-400 dark:text-slate-500">
-            Showing {yearFilter === "all" ? "all years" : filterLabel(yearFilter)} · Hybrid ranking
+            Showing{" "}
+            {yearFilter === "all" ? "all years" : filterLabel(yearFilter)} ·
+            Hybrid ranking
           </span>
         </div>
 
