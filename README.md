@@ -60,7 +60,7 @@ npm run dev
 ### 1. リポジトリの取得
 
 ```bash
-git clone <YOUR_FORK_URL> CVPaper-Reader
+git clone https://github.com/yutanpo1227/CVPaper-Reader.git
 cd CVPaper-Reader
 ```
 
