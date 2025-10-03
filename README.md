@@ -28,12 +28,14 @@ CVPaper Reader は、CVPR 2023〜2025 の公開論文をクロールして Supab
 ## クイックスタート
 
 1. リポジトリの取得
+
 ```bash
 git clone https://github.com/yutanpo1227/CVPaper-Reader.git
 cd CVPaper-Reader
 ```
 
 2. Supabase ローカル環境の起動
+
 supabase cliをインストールしてください。
 macOSでは以下のコマンドを実行
 ```bash
@@ -47,6 +49,7 @@ supabase start
 シードデータとしてCVPR2023~2025の論文データが入っています。
 
 3. フロントエンドの起動
+
 ```bash
 cd nextjs-frontend
 npm install
